@@ -1,0 +1,6 @@
+.program squarewave
+    set pindirs, 1
+again:
+    set pins, 1 [1]
+    set pins, 0
+    jmp again
