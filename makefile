@@ -36,7 +36,7 @@ uf2: $(UF2)
 
 pio:
 	@mkdir -p $(TAR_DIR)
-	pioasm -o hex PIO_src/program1.s $(TAR_DIR)/main.hex
+	pioasm -o hex PIO_src/program1.s $(TAR_DIR)/program1.hex
 
 $(UF2): $(ELF)
 	elf2uf2-rs $< $@
