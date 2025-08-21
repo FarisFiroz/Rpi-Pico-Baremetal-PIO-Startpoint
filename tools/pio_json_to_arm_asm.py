@@ -16,6 +16,5 @@ for i, item in enumerate(instructions_list_dicts):
     final_output += (prefix + instruction_hex)
 
 print("program name: " + data["programs"][0]["name"])
-print(final_output)
 with open("build_garbage/" + data["programs"][0]["name"] + ".s", 'w') as f:
     f.write(final_output)
