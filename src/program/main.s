@@ -137,9 +137,6 @@ sleep:
 
 // Data {{{
 pio0_instructions:
-.hword 0xe081
-.hword 0xe101
-.hword 0xe000
-.hword 0x0001
+.include "build_garbage/squarewave.s"
 pio0_instructions_end:
 // }}}

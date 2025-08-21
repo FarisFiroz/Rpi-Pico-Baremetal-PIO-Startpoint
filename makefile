@@ -36,7 +36,8 @@ uf2: $(UF2)
 
 pio:
 	@mkdir -p $(TAR_DIR)
-	pioasm -o hex PIO_src/program1.s $(TAR_DIR)/program1.hex
+	pioasm -v 0 -o json PIO_src/program1.s $(TAR_DIR)/program1.json
+	python3 tools/pio_json_to_arm_asm.py
 
 $(UF2): $(ELF)
 	elf2uf2-rs $< $@
