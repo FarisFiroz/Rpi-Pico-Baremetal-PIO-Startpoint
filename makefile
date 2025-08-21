@@ -36,7 +36,7 @@ uf2: $(UF2)
 
 pio:
 	@mkdir -p $(TAR_DIR)
-	pioasm -v 0 -o json PIO_src/program1.s $(TAR_DIR)/program1.json
+	pioasm -v 0 -o json pio_src/program.pio $(TAR_DIR)/program1.json
 	python3 tools/pio_json_to_arm_asm.py
 
 $(UF2): $(ELF)
