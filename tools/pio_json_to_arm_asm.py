@@ -1,8 +1,8 @@
 import json
 from pathlib import Path
 
-path = Path("build_garbage/program1.json")
-with open("build_garbage/program1.json", "r") as f:
+path = Path("build_garbage/pio_program.json")
+with open("build_garbage/pio_program.json", "r") as f:
     data = json.load(f)
 
 for program in data["programs"]:
